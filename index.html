@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="sidebar">
+        <h1 class="actions_header">Actions:</h1>
+        <div class="actionButtons">
+          <button onclick="showMeme()">Show nice picture</button>
+          <button onclick="showJoke()">Tell Me a Joke</button>
+          <button onclick="showQuote()">Random Quote</button>
+          <button onclick="showRiddle()">Riddle Me</button>
+          <button onclick="revealAnswers()" class="reveal-btn">
+            Reveal Riddle Answer
+          </button>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Output:</h2>
+        <h2>Show me nice picture</h2>
+        <div class="meme-content"></div>
+        <h2>Tell me something funny</h2>
+        <div class="joke-content"></div>
+        <h2>Give me some wisdom</h2>
+        <div class="quote-content"></div>
+        <h2>I want some wisdom</h2>
+        <div class="riddle-content"></div>
+      </section>
+    </main>
+    <script src="javascript.js"></script>
+  </body>
+</html>
