@@ -8,7 +8,8 @@ function showMeme()
 {
     clearDivs();
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', 'https://picsum.photos/400');
+    const randomNumber = Math.random(); // Generate a random number to bust cache
+    newImage.setAttribute('src', `https://source.unsplash.com/random/200x200?random=${randomNumber}`);
     memeDiv.appendChild(newImage);
 }
 
