@@ -7,11 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Playfair+Display:ital@1&display=swap"
+    rel="stylesheet"
+  />
   <body>
-    <main>
+    <main class="mainSection">
       <section class="sidebar">
-        <h1 class="actions_header">Actions:</h1>
-        <div class="actionButtons">
+        <h1 class="actionsHeader">Actions:</h1>
+        <div class="actionButtonsWindow">
           <button onclick="showMeme()">Show nice picture</button>
           <button onclick="showJoke()">Tell Me a Joke</button>
           <button onclick="showQuote()">Random Quote</button>
@@ -22,8 +28,8 @@
         </div>
       </section>
 
-      <section class="content-section">
-        <h2>Output:</h2>
+      <section class="contentSection">
+        <h2 class="contentHeader">Output:</h2>
         <h2>Show me nice picture</h2>
         <div class="meme-content"></div>
         <h2>Tell me something funny</h2>

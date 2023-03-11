@@ -9,7 +9,8 @@ function showMeme()
     clearDivs();
     const newImage = document.createElement('img');
     const randomNumber = Math.random(); // Generate a random number to bust cache
-    newImage.setAttribute('src', `https://source.unsplash.com/random/200x200?random=${randomNumber}`);
+    newImage.setAttribute('src', `https://source.unsplash.com/random/400x400?random=${randomNumber}`);
+    newImage.setAttribute('width', `40%`);
     memeDiv.appendChild(newImage);
 }
 
@@ -55,37 +56,17 @@ function revealAnswers()
     answerRiddle.style.visibility = 'visible';
     }
 }
-
-
-
 function clearDivs() {
     divsToClearList.forEach(item => {
       let divToClear = document.querySelector(item);
       divToClear.innerHTML = '';
     });
   }
-
-
-
-
-
-
-
-
-
-
   function getRandomData(type) {
     return data[type][randomizer(data[type].length)];
   }
   
-  // ----------------------------------------------------
-  // IGNORE EVERYTHING BELOW - Used for random data
-  // ----------------------------------------------------
-  
-  // Everything below is pre-generated so that you don't have to go find your own memes, jokes, quotes, and math problems.
-  // -----------------------------------------------
-  
-  // Source: https://www.thecoderpedia.com/blog/programming-memes/, Reddit
+
   const memes = [
     "https://i.redd.it/a0v87gwzoge61.jpg",
     "https://i.redd.it/q29egav34ee61.jpg",
